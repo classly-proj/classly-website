@@ -103,3 +103,8 @@ a {
     text-align: center;
     line-height: 12vmin;
 }
+
+.soon {
+    color: #0192C2;
+    font-style: oblique;
+}
