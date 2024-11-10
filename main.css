@@ -1,0 +1,106 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+}
+
+* {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#header {
+    width: 100%;
+    height: 12vmin;
+    background-repeat: no-repeat;
+    background-color: #0192C2;
+}
+
+#header #icon {
+    width: 12vmin;
+    height: 12vmin;
+    background-image: url("./img/icon/logo-192x192.png");
+    background-size: 12vmin;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+}
+
+#header #title {
+    height: 12vmin;
+    line-height: 12vmin;
+    text-align: center;
+    font-size: 6vmin;
+    color: #FFFFFF;
+    float: left;
+}
+
+#header #login {
+    text-align: right;
+    font-size: 4vmin;
+    color: #FFFFFF;
+    float: right;
+    border: none;
+    line-height: 12vmin;
+    padding-left: 2vmin;
+    padding-right: 2vmin;
+
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .2);
+    color: white;
+}
+
+#content {
+    width: 100%;
+    height: calc(100% - 24vmin);
+    background-color: #FFFFFF;
+    overflow-y: auto;
+    background-image: url("./img/unh.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content #main {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2vmin;
+    padding: 2vmin;
+}
+
+#content #main .tile {
+    padding: 2vmin;
+    background-color: rgba(255, 255, 255, .85);
+    border-radius: 1vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #555555;
+}
+
+#content #main .tile .heading {
+    width: 100%;
+    font-size: 3vmin;
+    text-align: center;
+    color: #555555;
+}
+
+a {
+    text-decoration: none;
+    color: #0192C2;
+}
+
+#footer {
+    height: 12vmin;
+    background-color: #66433c;
+    color: white;
+    text-align: center;
+    line-height: 12vmin;
+}
