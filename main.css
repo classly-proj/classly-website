@@ -53,28 +53,24 @@ html, body {
 }
 
 #content {
-    width: 100%;
-    height: calc(100% - 24vmin);
+    position: absolute;
+    top: 12vmin;
+    left: 0;
+    width: calc(100% - 4vmin);
+    height: calc(100% - 28vmin);
     background-color: #FFFFFF;
     overflow-y: auto;
     background-image: url("./img/unh.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#content #main {
-    width: 90%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2vmin;
     padding: 2vmin;
 }
 
-#content #main .tile {
+#content .tile {
     padding: 2vmin;
     background-color: rgba(255, 255, 255, .85);
     border-radius: 1vmin;
@@ -85,7 +81,7 @@ html, body {
     color: #555555;
 }
 
-#content #main .tile .heading {
+#content .tile .heading {
     width: 100%;
     font-size: 3vmin;
     text-align: center;
@@ -98,6 +94,9 @@ a {
 }
 
 #footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     height: 12vmin;
     background-color: #66433c;
     color: white;
