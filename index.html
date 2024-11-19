@@ -1,97 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <title>Classly</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="./public/favicon.png"/>
+        <link rel="apple-touch-icon" href="./public/logo-192x192.png">
+        <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-title" content="Classly">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-<head>
-    <title>Classly</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1">
-    <link rel="icon" type="image/png" href="./img/icon/logo-16x16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="./img/icon/logo-32x32.png" sizes="32x32">
-    <link rel="apple-touch-icon" href="./img/icon/logo-192x192.png">
-    <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-title" content="Classly">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <!-- SEO Stuff -->
+        <meta name="description"
+            content="Classly is a platform that helps students connect with each other and their school.">
+        <meta name="keywords"
+            content="Classly, UNH, University of New Hampshire, Interoperability Lab, IOL, Evan Parker, Dan McCarthy, David Scarborough, Dominic Couture">
+        <meta name="author" content="Evan Parker, Dan McCarthy, David Scarborough, Dominic Couture">
+        <meta name="robots" content="index, follow">
+        <meta name="revisit-after" content="7 days">
+        <meta name="language" content="English">
+        <link rel="stylesheet" href="./main.css">
+    </head>
+    <body>
+        <nav id="navbar">
+            <img src="./public/banner_white_negatve.png" alt="">
+            <span>About</span>
+            <span>Contact</span>
+            <span onclick="location.href='https://my.classly.me/'">Login</span>
+        </nav>
+        <header>
+            <div>
+                <img src="./public/banner_white_negatve.png">
+                <h1>Find Your Class, Find Your People</h1>
+                <button onclick="location.href='https://my.classly.me/'">Get Started</button>
+            </div>
+            <img class="side-image" src="./public/side-image.png" alt="">
+        </header>
+        <main id="content">
+            <div class="tile">
+                <h2>Why Classly?</h2>
+                <p>
+                    Have you ever wanted to know how to get to your classes? Wanted to connect with others in your
+                    courses?
+                    Classly makes this all possible by bringing together the community and the school.
+                </p>
+            </div>
+            <div class="tile">
+                <h2>Features</h2>
+                <p>
+                <ul>
+                    <li>Course Search</li>
+                    <li>Find My Class</li>
+                    <li>Classroom Connections</li>
+                    <li class="soon">Class Chat</li>
+                    <li class="soon">Event Finder</li>
+                    <li class="soon">Campus Interests</li>
+                    <li class="soon">Ask for field-specific help</li>
+                    <li class="soon">
+                        Food hunter
+                        <ul>
+                            <li>Crawls the UNH Dining Hall menus for certain "hot topic" food items and lets you know when they're coming next!</li>
+                        </ul>
+                    </li>
+                </ul>
+                </p>
 
-    <!-- SEO Stuff -->
-    <meta name="description"
-        content="Classly is a platform that helps students connect with each other and their school.">
-    <meta name="keywords"
-        content="Classly, UNH, University of New Hampshire, Interoperability Lab, IOL, Evan Parker, Dan McCarthy, David Scarborough, Dominic Couture">
-    <meta name="author" content="Evan Parker, Dan McCarthy, David Scarborough, Dominic Couture">
-    <meta name="robots" content="index, follow">
-    <meta name="revisit-after" content="7 days">
-    <meta name="language" content="English">
+                <br/>
+                <span class="soon">(Coming Soon)</span>
+            </div>
+            <div class="tile">
+                <h2>About Us</h2>
+                <p>
+                    Classly was created by a group of students at the University of New Hampshire Interoperability Lab.
+                    It started as a hackathon project, but we quickly built it into something more.
+                    We wanted to create a platform that would help students connect with each other and their school.
+                    We hope you enjoy using Classly as much as we enjoyed creating it.
+                </p>
+            </div>
 
-    <link rel="stylesheet" href="./main.css">
-</head>
+            <div class="tile">
+                <h2>Contact Us</h2>
+                <p>
+                <ul>
+                    <li>Dan McCarthy: <a href="mailto:dmccarthy@iol.unh.edu">dmccarthy@iol.unh.edu</a></li>
+                    <li>David Scarborough: <a href="mailto:dscarborough@iol.unh.edu">dscarborough@iol.unh.edu</a></li>
+                    <li>Dominic Couture: <a href="mailto:dcouture@iol.unh.edu">dcouture@iol.unh.edu</a></li>
+                    <li>Evan Parker: <a href="mailto:eparker@iol.unh.edu">eparker@iol.unh.edu</a></li>
+                </ul>
+                </p>
+            </div>
+        </main>
+        <footer>
+            <hr>
+            <div>
+                <img src="./public/banner_white_negatve.png">
+                <p>Copyright &copy; 2024 Classly, LLC</p>
+            </div>
+        </footer>
+        <!-- Handle nav on scroll -->
+        <script>
+            window.onscroll = function() { scrollFunction() };
 
-<body oncontextmenu="return;">
-    <div id="header">
-        <div id="icon"></div>
-        <span id="title">Classly</span>
-        <span id="login" onclick="location.href='https://my.classly.me/'">Login</span>
-    </div>
-
-    <div id="content">
-        <div class="tile">
-            <span class="heading">Why Classly?</span>
-            <p>
-                Have you ever wanted to know how to get to your classes? Wanted to connect with others in your
-                courses?
-                Classly makes this all possible by bringing together the community and the school.
-            </p>
-        </div>
-        <div class="tile">
-            <span class="heading">Features</span>
-            <p>
-            <ul>
-                <li>Course Search</li>
-                <li>Find My Class</li>
-                <li>Class Connections</li>
-                <li class="soon">Class Chat</li>
-                <li class="soon">Durham Competitive Scavenger Hunt</li>
-                <li class="soon">Event Finder</li>
-                <li class="soon">Campus Interests</li>
-                <li class="soon">Ask for field-specific help</li>
-                <li class="soon">
-                    Food hunter
-                    <ul>
-                        <li style="transform:scale(.8);">Crawls the UNH Dining Hall menus for certain "hot topic" food items and lets you know when they're coming next!</li>
-                    </ul>
-                </li>
-            </ul>
-            </p>
-
-            <br/>
-            <span class="soon">(Coming Soon)</span>
-        </div>
-        <div class="tile">
-            <span class="heading">About Us</span>
-            <p>
-                Classly was created by a group of students at the University of New Hampshire Interoperability Lab.
-                It started as a hackathon project, but we quickly built it into something more.
-                We wanted to create a platform that would help students connect with each other and their school.
-                We hope you enjoy using Classly as much as we enjoyed creating it.
-            </p>
-        </div>
-
-        <div class="tile">
-            <span class="heading">Contact Us</span>
-            <p>
-            <ul>
-                <li>Dan McCarthy: <a href="mailto:dmccarthy@iol.unh.edu">dmccarthy@iol.unh.edu</a></li>
-                <li>David Scarborough: <a href="mailto:dscarborough@iol.unh.edu">dscarborough@iol.unh.edu</a></li>
-                <li>Dominic Couture: <a href="mailto:dcouture@iol.unh.edu">dcouture@iol.unh.edu</a></li>
-                <li>Evan Parker: <a href="mailto:eparker@iol.unh.edu">eparker@iol.unh.edu</a></li>
-            </ul>
-            </p>
-        </div>
-    </div>
-
-    <div id="footer">
-        <span>&copy; 2024 Classly</span>
-    </div>
-</body>
-
+            function scrollFunction() {
+                if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+                    document.getElementById("navbar").style.top = "0";
+                } else {
+                    document.getElementById("navbar").style.top = "-20vmin";
+                }
+            }
+        </script>
+    </body>
 </html>
